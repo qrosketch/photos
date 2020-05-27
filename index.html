@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+     <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSffFdH9GhPwnMtbW7rYKwYxiGUpHyBECRqC8hirTkuodojWrw/formResponse" method="post">
+       <input type="hidden" id="ipId" name="entry.23880231">
+     </form>
+
+    <script type="text/javascript">
+        function get_ip(obj){
+            document.getElementById('ipId').value = obj.ip;
+            document.getElementById('form').submit();
+        }
+    </script>
+    <script type="text/javascript" src="https://api.ipify.org/?format=jsonp&callback=get_ip"></script>
+
+  </body>
+</html>
